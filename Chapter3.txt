@@ -1,0 +1,138 @@
+Python CHAPTER 3
+NUMBER 1
+passes = 0
+failures = 0
+
+for student in range(1, 11):
+    result = int(input(student - result))
+    
+
+    while result != 1 and result != 2:
+        print("Invalid input. Please enter 1 or 2.")
+        result = int(input(f"Student {student} - Enter result (1 = pass, 2 = fail): "))
+        
+    if result == 1:
+        passes += 1
+    else:
+        failures += 1
+
+print(f"\nPassed: {passes}")
+print(f"Failed: {failures}")
+if passes > 8:
+    print("Bonus to instructor!")
+
+
+
+NUMBER 2
+a = b = 7
+print('a =', a, '\nb =', b)
+The code is correct 
+
+
+NUMBER 3
+ for row in range(10):
+    for column in range(10):
+        print('<' if row % 2 == 1 else '>', end='')
+    print()
+The code prints < ten times in a row and > ten times in a column 
+
+
+NUMBER 4
+for row in range(2):
+    for column in range(7):
+        print('@', end='')
+    print()
+
+
+NUMBER 5
+number1 = int(input('Enter first integer: '))
+number2 = int(input('Enter second integer: '))
+
+if number1 == number2:
+    print(number1, 'is equal to', number2)
+else:
+    print(number1, 'is not equal to', number2)
+
+if number1 < number2:
+    print(number1, 'is less than', number2)
+    print(number1, 'is less than or equal to', number2)
+else:
+    print(number1, 'is greater than', number2)
+    print(number1, 'is greater than or equal to', number2)
+
+
+
+NUMBER 6
+input("What is your problem? ")
+answer = input("Have you had this problem before (yes or no)? ")
+
+if answer == 'yes':
+    print("Well, you have it again.")
+elif answer == 'no':
+    print("Well, you have it now.")
+else:
+    print("Interesting response.")
+
+
+NUMBER 7
+print('number''square''cube')
+
+for number in range(6):
+    print(f"{number:>6}{number**2:>6}{number**3:>6}")
+
+
+NUMBER 8
+total = 0
+product = 1
+smallest = None
+largest = None
+
+for i in range(1, 5):
+    num = int(input('Enter an integer'))
+    total += num
+    product *= num
+    
+    if smallest is None or num < smallest:
+        smallest = num
+    if largest is None or num > largest:
+        largest = num
+
+average = total / 4
+
+print(f"\nSum is {total}")
+print(f"Average is {average}")
+print(f"Product is {product}")
+print(f"Smallest is {smallest}")
+print(f"Largest is {largest}")
+
+
+NUMBER 9
+number = int(input("Enter a five-digit integer: "))
+
+divisor = 10000
+
+print("Digits separated:")
+for i in range(5):
+    digit = number // divisor
+    print(digit, end="   ")
+    number %= divisor
+    divisor //= 10
+print()
+
+
+NUMBER 10
+p = 1000 
+r = 0.07 
+
+print('Year':<5'Amount on Deposit')
+
+for n in range(1, 31):
+    a = p * (1 + r) ** n
+    
+
+
+
+
+
+
+
